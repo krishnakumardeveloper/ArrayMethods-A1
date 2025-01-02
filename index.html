@@ -10,25 +10,26 @@
     <h1>Array Methods</h1>
 
     <script>
-// push
- let arr1 = [1, 2, 3];
-arr1.push(4);  // [1, 2, 3, 4]
-console.log(arr1);
 
-// pop
-let arr2 = [1, 2, 3, 4];
-arr2.pop();  // [1, 2, 3]
-console.log(arr2);
+// // push
+//  let arr1 = [1, 2, 3];
+// arr1.push(4);  // [1, 2, 3, 4]
+// console.log(arr1);
 
-// shift
-let arr3 = [1, 2, 3, 4];
-arr3.shift();  // [2, 3, 4]
-console.log(arr3);
+// // pop
+// let arr2 = [1, 2, 3, 4];
+// arr2.pop();  // [1, 2, 3]
+// console.log(arr2);
 
-// unshift
-let arr4 = [1, 2, 3];
-arr4.unshift(0);  // [0, 1, 2, 3]
-console.log(arr4);
+// // shift
+// let arr3 = [1, 2, 3, 4];
+// arr3.shift();  // [2, 3, 4]
+// console.log(arr3);
+
+// // unshift
+// let arr4 = [1, 2, 3];
+// arr4.unshift(0);  // [0, 1, 2, 3]
+// console.log(arr4);
 
 // for each
 let arr5 = [1, 2, 3, 4];
@@ -47,7 +48,7 @@ console.log(newArr);
 
 // filter
 let arr7 = [1, 2, 3, 4, 5];
-let evenNumbers = arr7.filter(function(item) {
+let evenNumbers = arr7.filter((item)=> {
   return item % 2 === 0;  // Output: [2, 4]
 });
 console.log(evenNumbers);
@@ -122,7 +123,11 @@ let intervalId = setInterval(function() {
 
 
 
+// ஆம், () => {} என்பது ஒரு arrow function ஆகும், இது ஒரு callback function ஆக பயன்படுத்தப்படலாம்.
 
+// JavaScript-ல் callback functions என்பது ஒரு function மற்றொரு function-க்கு argument ஆக pass செய்யப்படும்போது, அந்த function execution முடிந்த பிறகு அந்த callback function (அந்த argument) அழைக்கப்படுகிறது.
+
+// Arrow function என்பது short form ஆக இருக்கும் regular function ஆகும், அதில் function என்ற keyword பயன்படுத்தப்படாது. இது concise (சுருக்கமான) மற்றும் code ஐ எளிமையாக எழுத உதவுகிறது. () => {} என்பது arrow function ஆகும், இது callback function-ஆக pass செய்யப்படும்போது, அது இன்னும் சிறந்தது.
 // conclusion
 let person = {
   name: "John",
